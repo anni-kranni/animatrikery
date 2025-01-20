@@ -23,6 +23,15 @@
   height: 400px
 }
 
+.led-hoop {
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+  margin: 50px auto;
+}
+
 /* 
 .ring-container {
   position: absolute;
