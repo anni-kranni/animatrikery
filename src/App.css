@@ -15,6 +15,11 @@
   color: white;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .ring-container {
   position: absolute;
@@ -23,9 +28,44 @@
   width: 2px;
   height: 50px;
   margin: auto;
+  display: flex;
   /* background-color: blueviolet; */
 }
 
 .rinkula {
-  position: relative;
+  position: absolute;
+
+}
+
+.hand {
+  width: 35px;
+  height: 55px;
+  border-radius: 48% 52% 50% 50% / 33% 53% 47% 67%;
+  position: absolute;
+  top: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle, rgba(255, 224, 199, 1) 41%, rgba(113, 91, 12, 1) 100%);
+  align-self: center;
+  z-index: 1;
+}
+
+.paita-torso {
+  width: 250px;
+  height: 250px;
+  border-radius: 48% 52% 50% 50% / 91% 94% 6% 9%;
+  background: linear-gradient(0deg, rgba(6, 147, 149, 1) 0%, rgba(151, 255, 0, 1) 100%);
+  margin: -50px 0 0 -140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paita-hiha {
+  width: 91px;
+  height: 75px;
+  border-radius: 48% 52% 50% 50% / 83% 79% 21% 17%;
+  background: linear-gradient(0deg, rgba(6, 147, 149, 1) 0%, rgba(151, 255, 0, 1) 100%);
+
 }
