@@ -19,22 +19,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 400px;
+  height: 400px
 }
 
+/* 
 .ring-container {
   position: absolute;
   left: 50%;
   top: 50%;
   width: 2px;
-  height: 50px;
+  height: 20px;
   margin: auto;
   display: flex;
-  /* background-color: blueviolet; */
-}
+} */
 
 .rinkula {
   position: absolute;
 
+}
+
+.katti {
+  position: absolute;
+  top: 18%;
+  right: 10%;
+  transform: scale(1.2)
 }
 
 .hand {
@@ -42,7 +51,7 @@
   height: 55px;
   border-radius: 48% 52% 50% 50% / 33% 53% 47% 67%;
   position: absolute;
-  top: 85%;
+  top: 66%;
   display: flex;
   align-items: center;
   justify-content: center;
