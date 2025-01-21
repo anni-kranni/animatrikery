@@ -6,7 +6,9 @@ import './App.css';
 
 function Section1() {
     return (
-        <div className='section'></div>
+        <div className='section'>
+            <h1 className='title'>Anni Roihuvuo</h1>
+        </div>
     )
 };
 

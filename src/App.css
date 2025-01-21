@@ -18,6 +18,15 @@
 .section {
   min-height: 100vh;
   background-color: #DA6B57;
+  font-family: 'Courier New', Courier, monospace;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  letter-spacing: 0.2em;
 }
 
 .container {
@@ -31,7 +40,6 @@
 .led-hoop {
   width: 300px;
   height: 300px;
-  border: 2px solid white;
   border-radius: 50%;
   position: relative;
   margin: 50px auto;
@@ -73,22 +81,4 @@
   background: radial-gradient(circle, rgba(255, 224, 199, 1) 41%, rgba(113, 91, 12, 1) 100%);
   align-self: center;
   z-index: 1;
-}
-
-.paita-torso {
-  width: 250px;
-  height: 250px;
-  border-radius: 48% 52% 50% 50% / 91% 94% 6% 9%;
-  background: linear-gradient(0deg, rgba(6, 147, 149, 1) 0%, rgba(151, 255, 0, 1) 100%);
-  margin: -50px 0 0 -140px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.paita-hiha {
-  width: 91px;
-  height: 75px;
-  border-radius: 48% 52% 50% 50% / 83% 79% 21% 17%;
-  background: linear-gradient(0deg, rgba(6, 147, 149, 1) 0%, rgba(151, 255, 0, 1) 100%);
-
 }

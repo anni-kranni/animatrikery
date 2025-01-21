@@ -85,19 +85,18 @@ function Animation() {
 
     return (
         <div className="App">
-            <header className="App-header">
-                <div className="container" ref={Container}>
+            <div className="container" ref={Container}>
 
-                    <div className='led-hoop'
-                        ref={hoopRef}>
-                        {createLEDs()}
-                    </div>
-
-                    <button id='play' onClick={toggleTimeline} >play</button>
-                    <button id='pause'>pause</button>
-
+                <div className='led-hoop'
+                    ref={hoopRef}>
+                    {createLEDs()}
                 </div>
-            </header>
+
+                <button id='play' onClick={toggleTimeline} >play</button>
+                <button id='pause'>pause</button>
+
+            </div>
+
         </div>
     );
 }
