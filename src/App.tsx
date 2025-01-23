@@ -10,14 +10,15 @@ import rinkula from './annin_rinkula.png'
 
 gsap.registerPlugin(useGSAP);
 
-const timeline = gsap.timeline()
 
 
 function App() {
 
 
-  return (
+  return (<>
     <Section1 />
+    <Animation />
+  </>
   );
 }
 

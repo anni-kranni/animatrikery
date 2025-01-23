@@ -53,14 +53,14 @@ function Animation() {
     };
 
     const toggleTimeline = () => {
-
+        tl.current.isActive() ? tl.current.pause() : tl.current.play()
     }
 
 
     useGSAP(() => {
 
-        const hoop = hoopRef.current;
-        if (!hoop || ledsRef.current.length !== LED_COUNT) return;
+        // const hoop = hoopRef.current;
+        // if (!hoop || ledsRef.current.length !== LED_COUNT) return;
 
         tl.current
             .to(".led-hoop", {
@@ -70,17 +70,15 @@ function Animation() {
                 duration: 3,
                 repeat: -1
             }, 0)
+        // .to(".led-hoop", {
+        //     transform: "rotate3d(1, 0, 0, 50deg)",
+        //     duration: 1.5,
+        //     yoyo: true,
+        //     ease: "linear",
+        //     repeat: -1
+        // })
 
 
-        // .to('.katti', {
-        //   top: 'random(0, 400)',
-        //   left: 'random(0, 400)',
-        //   rotation: 'random(-180, 720)',
-        //   duration: 'random(1, 4)',
-        //   repeat: -1,
-        //   repeatRefresh: true
-
-        // }, 0)
     }, { scope: Container })
 
     return (
@@ -92,8 +90,7 @@ function Animation() {
                     {createLEDs()}
                 </div>
 
-                <button id='play' onClick={toggleTimeline} >play</button>
-                <button id='pause'>pause</button>
+                <button id='play' onClick={toggleTimeline} >play / pause</button>
 
             </div>
 
